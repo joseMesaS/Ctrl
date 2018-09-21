@@ -14,7 +14,7 @@ class App extends Component {
     const { hideSourceOnDrag } = this.state;
     return (
       <div className="App">
-        <Navigation className='active'/>
+        <Navigation activeNav={this.state.activeNav}/>
         <DashBoard hideSourceOnDrag={hideSourceOnDrag}></DashBoard>
         <Footer/>
       </div>

@@ -26,10 +26,21 @@
 .active {
   animation-name: navigationActive;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
+}
+
+.inactive {
+  animation-name: navigationInactive;
+  animation-fill-mode: forwards;
+  animation-duration: 0.7s;
 }
 
 @keyframes navigationActive {
-  from { width: 5vw; }
+  from { width: 2vw; }
   to { width: 20vw; }
+}
+
+@keyframes navigationInactive {
+  from { width: 20vw; }
+  to { width: 2vw; }
 }

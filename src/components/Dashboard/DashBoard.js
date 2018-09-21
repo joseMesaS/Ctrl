@@ -47,11 +47,9 @@ class DashBoard extends React.Component {
       1: { top: 100, left: 480, title: '' },
       2: { top: 180, left: 420, title: '' },
     },
-    count: 3,
-    text: ''
+    count: 3
 	};
 	
-
   moveBox = (id, left, top) => {
 		this.setState(
 			update(this.state, {
@@ -61,7 +59,7 @@ class DashBoard extends React.Component {
 					},
 				},
 			}),
-		)
+		);
   }
 
   createPostStick = (e) => {
@@ -121,8 +119,8 @@ class DashBoard extends React.Component {
             })}
           </div>
 			)
-		)
+		);
 	}
 }
 
-export default flow(DropTarget(ItemTypes.POSTSTICKS, boxTarget, collect),DragDropContext(HTML5Backend))(DashBoard)
+export default flow(DropTarget(ItemTypes.POSTSTICKS, boxTarget, collect),DragDropContext(HTML5Backend))(DashBoard);
